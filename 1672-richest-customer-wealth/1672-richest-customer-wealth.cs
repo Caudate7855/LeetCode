@@ -2,7 +2,7 @@ public class Solution
     {
         public int MaximumWealth(int[][] accounts) 
         {
-            int maxWealthSoFar = 0;
+            int maximumWealth = 0;
 
             foreach (int[] customer in accounts)
             {
@@ -13,9 +13,9 @@ public class Solution
                     currentCustomerWealth += bank;
                 }
                 
-                maxWealthSoFar = Math.Max(maxWealthSoFar, currentCustomerWealth);
+                maximumWealth = Math.Max(maximumWealth, currentCustomerWealth);
             }
         
-            return maxWealthSoFar;
+            return maximumWealth;
         }
     }
