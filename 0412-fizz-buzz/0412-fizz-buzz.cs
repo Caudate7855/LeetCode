@@ -9,7 +9,6 @@ public class Solution
             bool divisibleBy3 = i % 3 == 0;
             bool divisibleBy5 = i % 5 == 0;
             
-            
             if(divisibleBy3 && divisibleBy5)
             {
                 answer.Add("FizzBuzz");
@@ -22,7 +21,6 @@ public class Solution
             {
                 answer.Add("Buzz");
             }
-            
             else
             {
                 answer.Add(i.ToString());
