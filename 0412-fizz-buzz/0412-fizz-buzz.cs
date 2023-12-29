@@ -8,21 +8,16 @@ public class Solution
         {
             bool divisibleBy3 = i % 3 == 0;
             bool divisibleBy5 = i % 5 == 0;
-            
-            if(divisibleBy3 && divisibleBy5)
-            {
+            if(divisibleBy3 && divisibleBy5){
                 answer.Add("FizzBuzz");
             }
-            else if(divisibleBy3)
-            {
+            else if(divisibleBy3){
                 answer.Add("Fizz");
             }
-            else if(divisibleBy5)
-            {
+            else if(divisibleBy5){
                 answer.Add("Buzz");
             }
-            else
-            {
+            else{
                 answer.Add(i.ToString());
             }
         }
